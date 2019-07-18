@@ -46,6 +46,10 @@ python manage.py check
 # and runs them against your database
 # essentially, synchronizing the changes you made to your models with the schema in the database.
 python manage.py migrate
+
+# Create superuser
+python manage.py createsuperuser
+
 ```
 
 # API play

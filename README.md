@@ -5,7 +5,7 @@ https://docs.djangoproject.com/en/2.2/intro/tutorial01/
 
 # Django steps to build this project 
 
-```bash
+```buildoutcfg
 # create virtual env
 virtualenv -p /usr/local/bin/python3 django-polling-app
 
@@ -15,20 +15,25 @@ source django-polling-app/bin/activate
 # Install requirements
 pip install -r requirements.txt
 
-# Create project
-django-admin startproject mysite
-
-# Start Django development server
-python manage.py runserver 0:8080
-
-# Create polling app, polls
-python manage.py startapp polls
+# Create db schema
+python manage.py makemigrations polls
 
 # Create db tables
 python manage.py migrate
 
-# Create db schema
-python manage.py makemigrations polls
+# Start Django development server
+python manage.py runserver 0:8080
+
+```
+
+# Django commands
+```buildoutcfg
+
+# Create project
+django-admin startproject mysite
+
+# Create polling app, polls
+python manage.py startapp polls
 
 # The sqlmigrate command takes migration names and returns their SQL
 python manage.py sqlmigrate polls 0001
@@ -41,5 +46,4 @@ python manage.py check
 # and runs them against your database
 # essentially, synchronizing the changes you made to your models with the schema in the database.
 python manage.py migrate
-
 ```

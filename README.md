@@ -15,4 +15,22 @@ python manage.py runserver 0:8080
 # Create polling app, polls
 python manage.py startapp polls
 
+# Create db tables
+python manage.py migrate
+
+# Create db schema
+python manage.py makemigrations polls
+
+# The sqlmigrate command takes migration names and returns their SQL
+python manage.py sqlmigrate polls 0001
+
+# Checks for any problems in your project without making migrations or touching the database
+python manage.py check
+
+# takes all the migrations that haven’t been applied 
+# (Django tracks which ones are applied using a special table in your database called django_migrations) 
+# and runs them against your database
+# essentially, synchronizing the changes you made to your models with the schema in the database.
+python manage.py migrate
+
 ```

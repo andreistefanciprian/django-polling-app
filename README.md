@@ -1,3 +1,10 @@
+# Description
+
+Django tutorial at:
+https://docs.djangoproject.com/en/2.2/intro/tutorial01/
+
+# Django steps to build this project 
+
 ```bash
 # Create project
 django-admin startproject mysite

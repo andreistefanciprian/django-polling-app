@@ -6,6 +6,15 @@ https://docs.djangoproject.com/en/2.2/intro/tutorial01/
 # Django steps to build this project 
 
 ```bash
+# create virtual env
+virtualenv -p /usr/local/bin/python3 django-polling-app
+
+# Activate env
+source django-polling-app/bin/activate
+
+# Install requirements
+pip install -r requirements.txt
+
 # Create project
 django-admin startproject mysite
 

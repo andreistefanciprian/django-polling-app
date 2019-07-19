@@ -52,6 +52,11 @@ python manage.py createsuperuser
 
 ```
 
+# Tests
+```bash
+python manage.py test polls
+```
+
 # API play
 ```buildoutcfg
 python manage.py shell

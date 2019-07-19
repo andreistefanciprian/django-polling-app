@@ -2,4 +2,3 @@ lib/
 include/
 bin/
 .idea/
-mysite/db.sqlite3
